@@ -11,7 +11,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.util.ObjectUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import ou.acs.entity.User;
 import ou.acs.payload.request.LoginRequest;
 import ou.acs.payload.response.JWTTokenSuccessResponse;
 import ou.acs.security.JWTTokenProvider;

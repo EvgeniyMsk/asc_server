@@ -29,12 +29,12 @@ public class UserRepositoryImpl implements UserRepository {
         for (File file : fileDir.listFiles())
         {
             Set<ERole> roles = new HashSet<>();
-            roles.add(ERole.ROLE_USER);
+            roles.add(ERole.USER);
             result.add(new User(file.getName().substring(0, file.getName().indexOf(".")), passwordEncoder.encode("password"), roles));
         }
         Set<ERole> roles = new HashSet<>();
-        roles.add(ERole.ROLE_ADMIN);
-        result.add(new User("qsymond", passwordEncoder.encode("passw"), roles));
+        roles.add(ERole.ADMIN);
+        result.add(new User("admin", passwordEncoder.encode("pass"), roles));
         return result;
     }
 
